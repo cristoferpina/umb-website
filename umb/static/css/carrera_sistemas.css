@@ -1,0 +1,233 @@
+/* Ingeniería en Sistemas Computacionales */
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background: #1E1405; /* Fondo oscuro cálido */
+    color: #F5F5F5;
+}
+
+.navbar-min {
+    background: #442600; /* Barra superior marrón profundo */
+    padding: 18px 26px;
+    color: #FFC27A;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.navbar-min h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: #FF9F43;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #FFC27A;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(135deg, #442600, #804200 70%);
+    padding: 50px 36px;
+    text-align: center;
+}
+
+.hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFC27A;
+    margin-bottom: 14px;
+    letter-spacing: .5px;
+}
+
+.contenido {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 36px;
+    display: grid;
+    gap: 40px;
+}
+
+.bloque {
+    background: #2F1D08;
+    padding: 30px 26px;
+    border-radius: 18px;
+    border: 1px solid #FF9F43;
+    box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .55);
+}
+
+.bloque h2 {
+    margin: 0 0 18px;
+    font-size: 1.5rem;
+    color: #FF9F43;
+    letter-spacing: .5px;
+}
+
+.bloque h3 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: #FFC27A;
+}
+
+.bloque ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chips span {
+    background: #3E2408;
+    color: #FFC27A;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: .75rem;
+    letter-spacing: .5px;
+    border: 1px solid #FF9F43;
+}
+
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 26px;
+}
+
+.plan-grid ul {
+    padding-left: 16px;
+    margin: 0;
+}
+
+.cols {
+    columns: 2;
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.pie {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: .75rem;
+    color: #BFBFBF;
+}
+
+@media(max-width:700px) {
+    .contenido {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+    }
+
+    .cols {
+        columns: 1;
+    }
+}
+/* ===== Modal Retícula ===== */
+.reticula-btn {
+    background: #FF9F43;
+    color: #1E1405;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: .8rem;
+    letter-spacing: .5px;
+}
+.reticula-btn:hover { filter: brightness(1.15); }
+
+.reticula-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; z-index: 1000; }
+.reticula-modal.is-open { display: flex; }
+.reticula-modal-backdrop { position: absolute; inset:0; background: rgba(0,0,0,.65); }
+
+.reticula-modal-content {
+    position: relative;
+    width: min(900px, 90vw);
+    height: min(80vh, 820px);
+    background: #2F1D08;
+    border: 1px solid #FF9F43;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,.65);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.reticula-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #FFC27A;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+}
+.reticula-modal-content iframe { flex: 1; width: 100%; border: 0; background: #1E1405; }
+.reticula-actions { background: #3E2408; padding: 10px 14px; text-align: right; }
+.download-link { color: #FFC27A; text-decoration: none; font-size: .75rem; font-weight: 600; }
+.download-link:hover { text-decoration: underline; }
+
+@media(max-width:700px){
+  .reticula-modal-content { height: 75vh; }
+}
+
+/* ============================= */
+/* OVERRIDES TEMA VERDE MODERNO */
+/* ============================= */
+:root {
+        --primary-color: #25b601;
+        --primary-color-hover: #057928;
+        --dark-text: #1d1d1f;
+        --medium-text: #3c3c43;
+        --bg-color: #f4f4f8;
+        --card-bg: rgba(255,255,255,0.85);
+        --border-radius: 24px;
+        --shadow: 0 10px 25px rgba(0,0,0,0.12);
+        --transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+body { background: var(--bg-color); color: var(--dark-text); font-family: "Raleway", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+.navbar-min { background: linear-gradient(140deg,var(--primary-color),#1d5e00 70%); color:#fff; box-shadow:0 6px 16px -6px rgba(0,0,0,.3); }
+.navbar-min h1 { color:#eaffd9; }
+.back-link { color:#c9f3c4; }
+
+.bloque { background: var(--card-bg); color: var(--medium-text); border:1px solid rgba(37,182,1,.25); backdrop-filter: blur(14px) saturate(160%); -webkit-backdrop-filter: blur(14px) saturate(160%); box-shadow: var(--shadow); }
+.bloque h2, .bloque h3 { color: var(--primary-color); }
+
+.chips span { background: rgba(37,182,1,.12); color: var(--primary-color); border:1px solid rgba(37,182,1,.35); }
+.reticula-btn { background: var(--primary-color); color:#fff; }
+.reticula-btn:hover { background: var(--primary-color-hover); }
+
+.reticula-modal-content { background: var(--card-bg); color: var(--medium-text); border:1px solid rgba(37,182,1,.3); backdrop-filter: blur(16px) saturate(170%); }
+.reticula-actions { background: rgba(37,182,1,.15); }
+.download-link { color: var(--primary-color); }
+.download-link:hover { text-decoration: underline; }
+
+.pie { color: var(--medium-text); }
+@media (max-width:480px){
+    .navbar-min h1 { font-size:1.1rem; }
+    .bloque { padding:22px 20px; }
+    .bloque h2 { font-size:1.3rem; }
+    .plan-grid { gap:18px; }
+}

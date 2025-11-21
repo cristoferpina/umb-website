@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acceso - UESSJR</title>
+	<link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+	<main class="login-container" aria-labelledby="login-titulo">
+		<div class="login-card" role="form">
+			<div class="video-circular" aria-hidden="true">
+				<video autoplay muted loop playsinline>
+					<source src="/static/videos/intro.mp4" type="video/mp4">
+				</video>
+			</div>
+			<h2 id="login-titulo">Iniciar Sesión</h2>
+			<form>
+				<label for="usuario">Usuario</label>
+				<input id="usuario" name="usuario" type="text" autocomplete="username" placeholder="Tu usuario" required>
+				<label for="password">Contraseña</label>
+				<input id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••" required>
+				<button type="submit">Acceder</button>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

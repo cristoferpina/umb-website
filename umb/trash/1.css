@@ -1,0 +1,231 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #1A1A1A;
+    background: #F4F4F4;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.nav-glass {
+    width: 100%;
+    background: #002147; /* Azul institucional profundo */
+    color: #FFFFFF;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-back {
+    color: #D6E6F5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-back:hover {
+    text-decoration: underline;
+}
+
+.btn-reticula {
+    padding: 8px 18px;
+    border: none;
+    background: #E1A700;
+    color: #002147;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-reticula:hover {
+    background: #F2BD25;
+}
+
+/* ===== HERO ===== */
+.hero-new {
+    position: relative;
+    height: 280px;
+    background: url('/static/images/banners/isc_banner.webp') center/cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 33, 71, 0.55);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 34px;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 28px;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    color: #002147;
+}
+
+.list {
+    list-style: disc;
+    padding-left: 22px;
+}
+
+/* ===== GRID DE SEMESTRES ===== */
+.sem-grid {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.sem-card {
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    padding: 22px;
+    border-radius: 4px;
+}
+
+.sem-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #002147;
+}
+
+.sem-card ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* ===== MODAL ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    z-index: 1000;
+}
+
+.modal.is-open {
+    display: flex;
+}
+
+.modal-bg {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+.modal-box {
+    position: relative;
+    width: min(900px, 90%);
+    height: min(80vh, 780px);
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #DCDCDC;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #002147;
+    cursor: pointer;
+}
+
+.modal-box iframe {
+    flex: 1;
+    border: none;
+}
+
+.modal-download {
+    display: block;
+    background: #E1A700;
+    color: #002147;
+    text-align: center;
+    font-weight: 600;
+    padding: 12px 0;
+    text-decoration: none;
+}
+
+.modal-download:hover {
+    background: #F2BD25;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    padding: 40px 10px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+    .nav-title {
+        width: 100%;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-new {
+        height: 220px;
+    }
+}

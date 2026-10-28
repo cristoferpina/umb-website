@@ -4,7 +4,9 @@
 
 # UMB · Sitio académico
 
-Plantillas y recursos web del proyecto académico UMB.
+**Una presencia web para el entorno universitario.**
+
+Proyecto de sitio académico con plantillas y recursos visuales organizados para la web.
 
 <img alt="HTML" src="https://img.shields.io/badge/HTML-0F172A?style=for-the-badge" />
 <img alt="CSS" src="https://img.shields.io/badge/CSS-1D4ED8?style=for-the-badge" />
@@ -15,6 +17,17 @@ Plantillas y recursos web del proyecto académico UMB.
 [Código fuente](https://github.com/cristoferpina/umb-website) &nbsp; / &nbsp; [Incidencias](https://github.com/cristoferpina/umb-website/issues) &nbsp; / &nbsp; [Perfil](https://github.com/cristoferpina)
 
 </div>
+
+## Una mirada al proyecto
+
+| Qué encontrarás | Por qué explorarlo |
+| --- | --- |
+| Una presencia web para el entorno universitario. | Proyecto de sitio académico con plantillas y recursos visuales organizados para la web. |
+| Trabajo de desarrollo | Estructura de páginas, separación de recursos y construcción de interfaces en un contexto académico. |
+
+**[Explora las plantillas →](umb/templates/)**
+
+
 
 ---
 
